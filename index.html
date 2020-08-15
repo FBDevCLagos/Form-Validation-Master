@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex App</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="box-heading">
+                <div class="main-heading">Regex App</div>
+                <div class="sub-heading">The Online Validator</div>
+                <a class="btn" href="/#formBox" id="btn">Get Started</a>
+            </div>        
+        </div>
+        <div class="form-box" id="formBox">
+            <div class="form-heading">
+                <h1>Please fill form correctly</h1>
+            </div>
+            <div class="form-body">
+                <form action="" method="GET" id="myForm">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="More than 2 letters">
+                        <p class="warning" id="fullNameError">Wrong input. Must be more than two letters</p>
+                        <p class="success" id="fullNameSuccess">Correct!</p>
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" placeholder="Valid email address">
+                        <p class="warning" id="emailError">Wrong input. Must be a valid email address</p>
+                        <p class="success" id="emailSuccess">Correct!</p>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="should be alphanumeric">
+                        <p class="warning" id="usernameError">Wrong input. Must be alphanumeric. Eg. johndoe123</p>
+                        <p class="success" id="usernameSuccess">Correct!</p>
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" placeholder="dd-mm-yyyy">
+                        <p class="warning" id="dobError">Wrong input. Must be dd-mm-yyyy</p>
+                        <p class="success" id="dobSuccess">Correct!</p>
+                    <label for="website">Webiste URL</label>
+                    <input type="text" name="website" id="website" placeholder="http(s)://website.com">
+                        <p class="warning" id="websiteError">Wrong input. Must be a valid url Eg. http(s)://whatever.com</p>
+                        <p class="success" id="websiteSuccess">Correct!</p>
+                    <label for="streetAddress">Street Address</label>
+                    <input type="text" id="streetAddress" placeholder="No 1,my address, sate, country.">
+                        <p class="warning" id="streetAddressError">Wrong input. Must be a valid Street Address Eg. No 1, my address, sate, country. </p>
+                        <p class="success" id="streetAddressSuccess">Correct!</p>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
